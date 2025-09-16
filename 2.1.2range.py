@@ -33,3 +33,4 @@ for i in range(n*2):
 rows,cols=2,3
 grid = [[i,j] for i in range(rows) for j in range(cols)]
 print(grid) # [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2]]
+
