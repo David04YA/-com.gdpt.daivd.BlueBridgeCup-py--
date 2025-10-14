@@ -1,0 +1,7 @@
+- 新建文件：ctrl+n
+- 运行:F5
+- 打开文档:F1(蓝桥杯可用)
+- 字体：Configure IDLE ->Font/Tabs 该为Consolas 18
+- alt+3注释
+- alt+4 取消注释
+- Tab多行缩进 Ctrl+[取消缩进
