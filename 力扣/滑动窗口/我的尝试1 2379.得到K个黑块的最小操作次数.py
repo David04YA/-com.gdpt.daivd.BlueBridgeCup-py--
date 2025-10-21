@@ -32,9 +32,9 @@
             arr.pop(i-k+1)
         return white
 
-当 i 到达 k-1 时，代码 arr[i]=j 再次出现。此时 arr 的长度只有 k-1（因为 append 了 k-1 次），而你试图访问索引 k-1，这必然会导致 IndexError: list assignment index out of range。
-不正确的 pop 索引：
+# 当 i 到达 k-1 时，代码 arr[i]=j 再次出现。此时 arr 的长度只有 k-1（因为 append 了 k-1 次），而你试图访问索引 k-1，这必然会导致 IndexError: list assignment index out of range。
+# 不正确的 pop 索引：
 
-即使我们修复了上面的赋值问题，arr.pop(i-k+1) 的逻辑也是不正确的。pop() 的参数是列表中的索引。
-你的意图是移除窗口最左边的元素。在你的 arr 列表中，最左边的元素永远在索引 0 的位置。
-而 i-k+1 这个表达式计算出的值会随着 i 的增大而增大，它代表的是元素在原字符串 blocks 中的索引，而不是在 arr 这个动态列表中的索引。所以使用它来 pop 是不正确的。
+# 即使我们修复了上面的赋值问题，arr.pop(i-k+1) 的逻辑也是不正确的。pop() 的参数是列表中的索引。
+# 你的意图是移除窗口最左边的元素。在你的 arr 列表中，最左边的元素永远在索引 0 的位置。
+# 而 i-k+1 这个表达式计算出的值会随着 i 的增大而增大，它代表的是元素在原字符串 blocks 中的索引，而不是在 arr 这个动态列表中的索引。所以使用它来 pop 是不正确的。
